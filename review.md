@@ -46,12 +46,11 @@ handleClick() {
 
 - Any part that is customizeable (animal name and img) should be stored in props that doesn't change with interaction so we can reuse vs. any part that is stored within the componenet should be stored in state.
  - start out with nested components first since it's easier to create a child component to interact with the parent
+- Each game would consist of two *teams* (Russiavile Racoons look similiar so we can create 1 component)
 
 1. **Game:**
-* Each game would consist of two *teams* (Russiavile Racoons look similiar so we can create 1 component)
-
-![component setup](img/component-hierarchy.png)
-
 2. **Scoreboard**
-
 3. **Team**
+
+Hooking both child components from teams into Game:
+![component setup](img/component-hierarchy.png)
