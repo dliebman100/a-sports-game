@@ -95,12 +95,17 @@ Let's add some extra functionality to our sports game. You will add the **Game C
 
 - Create a **Game Component** that accepts a **venue** name as a prop.
 - Update the default **App** component that is currently displaying your teams to display the **Game** component instead. The default **App** component should only render the **Game** component instead of rendering the **Team** component as before.
+
 - Update the **Game** component to display "Welcome to" followed by the name of the **venue** passed in as a prop.
+
 - Your app should still render the default component with `ReactDOM.render()`, commonly named **App**.
   - The Game component should display the venue name for the game and two **Team** components, with one component representing the visitors team and the other representing the home team.
   - Each team should function as before but now conditionally display a **Shot Percentage** metric if a shot has been taken by the team.
+
 - Think about what would happen if we added another **Game** component to our App. We could change the **Venue** name but we can only create new games with the same teams. What could we modify in the **Game** and **Team** components to allow us to have unique teams for each game we include in our default App component?
+
 - Use your knowledge of HTML and CSS to make the page look like more like a game where two teams, home and visiting, are facing off in competition
+
 - Verify both teams are displayed and keeping track of their stats
 - You **DO NOT** have to build the `RESET GAME` button yet, as that's part of the next section.
 - (Optional) Add functionality to make a sound play when a team shoots and a different sound when a team scores. The resources below should help accomplish this.

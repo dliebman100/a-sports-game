@@ -17,7 +17,9 @@ export default function Team(props) {
     );
   }
 //The Team component should have a Shoot button. We don't score every time we shoot so let's discuss the shoot buttons functionality. 
+  
   //When a shot is taken the Shots Taken count should always increase
+  
   //There should be a random chance that the Score counter increases.
 
   return (

@@ -61,6 +61,7 @@ export default class Game extends React.Component {
       },
     }));
   };
+  
   //ContactForm demo
   render() {
     
