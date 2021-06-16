@@ -27,8 +27,8 @@ export default class Game extends React.Component {
     );
   }
 
-  shoot = (team) => {
-    const teamStatsKey = `${team}TeamStats`;
+  handleShotAttempt = (teamName) => {
+    const teamStatsKey = `${teamName}TeamStats`;
     let score = this.state[teamStatsKey].score;
     this.shotSound.play();
 
@@ -61,8 +61,9 @@ export default class Game extends React.Component {
       },
     }));
   };
-
+  //ContactForm demo
   render() {
+    
     const { visitingTeamStats, homeTeamStats, resetCount } = this.state;
     const { venue, visitingTeam, homeTeam } = this.props;
     return (
@@ -78,7 +79,7 @@ export default class Game extends React.Component {
             name={visitingTeam.name}
             logo={visitingTeam.logoSrc}
             stats={visitingTeamStats}
-            shotHandler={() => this.shoot("visiting")}
+            shotHandler={() => this.handleShotAttempt("visiting")}
           />
 
           <div className="versus">
@@ -93,7 +94,7 @@ export default class Game extends React.Component {
             name={homeTeam.name}
             logo={homeTeam.logoSrc}
             stats={homeTeamStats}
-            shotHandler={() => this.shoot("home")}
+            shotHandler={() => this.handleShotAttempt("home")}
           />
         </div>
       </div>
