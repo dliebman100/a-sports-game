@@ -1,6 +1,5 @@
 import "./App.css";
 import Game2 from "./components/game/Game2";
-import Team2 from "./components/team/Team2";
 import ScoreBoard2 from "./components/scoreboard/ScoreBoard2";
 
 const raccoons = {

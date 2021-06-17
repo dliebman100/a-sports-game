@@ -27,7 +27,7 @@ body {
   font-family: 'Oswald', sans-serif;
 }
 
-/* .ScoreBoard {
+.ScoreBoard {
     display: flex;
     justify-content:center;
     font-family: "Score Board", sans-serif;
@@ -87,7 +87,7 @@ body {
   font-size: 500%;
   color: #fc0;
   text-shadow: 2px 2px 0 black;
-} */
+} 
 
 button {
   display: block;
