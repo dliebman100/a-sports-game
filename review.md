@@ -53,3 +53,7 @@ handleClick() {
 - Visualize what we have with a diagram of the component hierarchy displayed as a tree:
   ![component setup](img/component-hierarchy.png)
 - Hooking both child components from teams into **Game**
+
+**controlled component** occurs when the user's input is tied to the state of the application (UI changes).
+
+Class component (if you're creating a component that relies on state) vs functional component w/hooks (cleaner doesn't always depend on state/stateless)
