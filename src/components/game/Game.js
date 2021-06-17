@@ -17,6 +17,7 @@ export default class Game extends React.Component {
         shots: 0,
         score: 0,
       },
+      message: true,
     };
 
     this.shotSound = new Audio(
@@ -59,12 +60,24 @@ export default class Game extends React.Component {
         shots: 0,
         score: 0,
       },
+      message: "",
     }));
   };
-  
-  //ContactForm demo
+
+  //Build a button called show that toggles a "hello world" message in the Team component.
+  //Reset it using resetGame function
+  handleHelloBtn = () => {
+    this.setState((currentState) => {
+      return {
+        //"Hello World",
+        // !message: currentState.message,
+        message: currentState.message ? false : "Hello World",
+      };
+    });
+  };
+
+  //ContactForm demo & Counter app
   render() {
-    
     const { visitingTeamStats, homeTeamStats, resetCount } = this.state;
     const { venue, visitingTeam, homeTeam } = this.props;
     return (
@@ -88,6 +101,10 @@ export default class Game extends React.Component {
             <div>
               <strong>Resets:</strong> {resetCount}
               <button onClick={this.resetGame}>Reset Game</button>
+            </div>
+            <div>
+              <h1>{this.state.message}</h1>
+              <button onClick={this.handleHelloBtn}>Show</button>
             </div>
           </div>
 
